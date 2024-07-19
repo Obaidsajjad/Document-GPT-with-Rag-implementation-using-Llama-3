@@ -49,7 +49,7 @@ def main():
             st.write("Chunks Created Successfully")
             vector_store = get_vectorstore(text_chunks)
             st.write("Vectore Store Created...")
-            st.write(vector_store)
+            # st.write(vector_store)
 
         st.session_state.conversation = get_conversation_chain(vector_store,groq_api_key)
         st.session_state.processcomplete = True
